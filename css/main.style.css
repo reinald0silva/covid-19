@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 2.5fr 0.2fr;
+    gap: 1px 1px;
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #333;
+}
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* css site */
+
+.main .card-deck {
+    justify-content: center;
+}
+
+.logo-header .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+}
+
+.nav-header .nav a.nav-link {
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-header .nav a.nav-link:hover,
+.nav-header .nav a.nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-header .nav .nav-item a.nav-link.active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.title-logo h2 {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    color: rgba(223, 15, 60, 0.87);
+    font-weight: bold;
+}
+
+.text-shadow {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.text-small {
+    font-size: x-small;
+}
+
+#main-dados2 {
+    height: 1563px;
+}
+
+#main-dados2>table>tbody>tr>td.bg-info>b>i {
+    color: red;
+}
+
+#main-dados2>table>tbody>tr>td.bg-warning.text-center>b,
+#main-dados2>table>tbody>tr>td.bg-danger.text-center>b {
+    color: black;
+}

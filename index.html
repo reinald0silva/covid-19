@@ -1,96 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Informações sobre o covid-19 no estado da Paraíba">
-    <meta name="author" content="Reinaldo Silva">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>COVID-19 - PB</title>
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.component.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.style.css" />
+    <!-- <link rel="stylesheet" href="css/style.reset.css"> -->
+    <title>COVID-19 PARAÍBA</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="logo-header mt-4">
-            <img class="logo" src="assets/001-virus-1.png" alt="covid-19">
-            <div class="title-logo text-center">
-                <h2>COVID-19</h2>
-                <p class="inner">©&nbsp2020, by <a href="https://github.com/reinald0silva">reinald0silva</a>.</p>
-            </div>
-        </div>
-
-        <div class=" nav-header mt-2 ">
-            <ul class="nav justify-content-center ">
-                <li class="nav-item ">
-                    <a class="nav-link" href="#main-dados1">Página Inicial</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#main-dados2">Lista de Municípios</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="main mt-4" id="main-dados1">
-            <div class="card-deck">
-                <div class="card d-flex flex-row bg-dark p-0 shadow">
-                    <div class="p-3 d-flex align-items-center">
-                        <img class="logo" src="assets/009-brasil.png" width="50px" height="50px" alt="brasil">
-                    </div>
-                    <div class="p-2 ">
-                        <p class="m-1">Casos em todo País:</p>
-                        <span class="badge badge-pill badge-warning m-0">Confirmados&nbsp&nbsp<span class="badge badge-light"></span></span>
-                        <span class="badge badge-pill badge-danger m-0 mt-1">Óbitos&nbsp&nbsp<span class="badge badge-light"></span></span>
-                        <span class="badge badge-pill badge-success m-0 mt-1">Recuperados&nbsp&nbsp<span class="badge badge-light"></span></span>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row bg-dark p-0 shadow">
-                    <div class="p-3 d-flex align-items-center">
-                        <img class="logo" src="assets/011-paraiba.png" width="60px" height="50px" alt="pb">
-                    </div>
-                    <div class="p-2 ">
-                        <p class="m-1">Casos em todo estado:</p>
-                        <span class="badge badge-pill badge-warning m-0">Confirmados&nbsp&nbsp<span class="badge badge-light"></span></span>
-                        <span class="badge badge-pill badge-danger m-0 mt-1">Óbitos&nbsp&nbsp<span class="badge badge-light"></span></span>
-                    </div>
-                </div>
-                <div class="card d-flex flex-row bg-dark p-0 shadow">
-                    <div class="p-3 d-flex align-items-center">
-                        <img class="logo" src="assets/008-calendario.png" width="50px" height="50px" alt="calendar">
-                    </div>
-                    <div class="p-2 ">
-                        <p class="m-1">Dados Atualizados em:</p>
-                        <span class="badge badge-pill badge-warning m-0">Data:&nbsp&nbsp<span class="badge badge-light"></span></span>
-                    </div>
+    <div class="grid-container text-shadow">
+        <div class="header">
+            <div class="logo-header mt-4">
+                <img class="logo" src="assets/001-virus-1.png" alt="covid-19" />
+                <div class="title-logo text-center">
+                    <h2>COVID-19</h2>
+                    <p class="text-center text-white text-small">
+                        ©&nbsp2020, by
+                        <a href="https://github.com/reinald0silva">reinald0silva</a>.
+                    </p>
                 </div>
             </div>
+            <div class="nav-header mt-2">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link btn1" href="#main-dados1"><i class="far fa-newspaper"></i>&nbspPágina Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn2" href="#main-dados2"><i class="fas fa-map-marked-alt"></i>&nbspLista de Municípios</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="main mt-4" id="main-dados2">
-            <table class="table table-sm table-dark mt-4 shadow">
-                <thead>
-                    <tr>
-                        <th scope="col"><img class="logo" src="assets/010-localizacao.png" width="18px" height="18px" alt="brasil">&nbsp&nbspCidades</th>
-                        <th scope="col">Confirmados</th>
-                        <th scope="col">Óbitos</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+        <div class="container-fluid main mt-4">
+            <div class="card-deck mr-4" id="main-dados1">
+                <ul class="list-group ml-4 mb-4 shadow">
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white">
+                        <i class="fas fa-globe-americas"></i>&nbspBrasil
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-warning">
+                        <i class="fas fa-diagnoses"></i>&nbspConfirmados&nbsp&nbsp
+                        <span class="badge badge-primary badge-light"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-danger">
+                        <i class="fas fa-skull-crossbones"></i>&nbspÓbitos&nbsp&nbsp
+                        <span class="badge badge-primary badge-light"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-success">
+                        <i class="fas fa-shield-virus"></i>&nbspRecuperados&nbsp&nbsp
+                        <span class="badge badge-primary badge-light"></span>
+                    </li>
+                </ul>
+                <ul class="list-group ml-4 mb-4">
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white shadow">
+                        <i class="fas fa-city"></i>&nbspParaíba
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-warning shadow">
+                        <i class="fas fa-diagnoses"></i>&nbspConfirmados&nbsp&nbsp
+                        <span class="badge badge-primary badge-light"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-danger shadow">
+                        <i class="fas fa-skull-crossbones"></i>&nbspÓbitos&nbsp&nbsp
+                        <span class="badge badge-primary badge-light"></span>
+                    </li>
+                </ul>
+
+                <ul class="list-group ml-4 mb-4">
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-dark text-white shadow">
+                        <i class="fas fa-wrench"></i>&nbspData de Atualização
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-info shadow">
+                        <i class="far fa-calendar-alt"></i>&nbspBrasil&nbsp&nbsp
+                        <span class="badge badge-primary badge-light"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-info shadow">
+                        <i class="far fa-calendar-alt"></i>&nbspParaíba&nbsp&nbsp
+                        <span class="badge badge-primary badge-light"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="table-city mt-0" id="main-dados2">
+                <table class="table table-sm table-dark shadow">
+                    <thead>
+                        <tr>
+                            <th scope="col"><i class="fas fa-map-marked-alt"></i>&nbsp&nbspCidades</th>
+                            <th scope="col">Confirmados</th>
+                            <th scope="col">Óbitos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
         </div>
+        <!-- <div class="container-fluid main py-0">
+
+        </div> -->
+        <!-- <div class="footer">
+            <p class="text-center text-white text-small">
+                ©&nbsp2020, by
+                <a href="https://github.com/reinald0silva">reinald0silva</a>.
+            </p>
+        </div> -->
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.js " integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin=" anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
-    <script src="js/main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/550d0e8758.js" crossorigin="anonymous"></script>
+    <script src="js/main.components.js"></script>
     <script src="js/events.js"></script>
 </body>
 
